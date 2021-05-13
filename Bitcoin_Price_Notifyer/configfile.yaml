@@ -1,0 +1,9 @@
+- Details:
+    password: Udemy@123
+    rec_email: bganeshbalan@gmail.com
+    sender_email: pythonprogramscript@gmail.com
+    account_sid: ACc32f2b5878fe1b90bb7da03759ec1a3e
+    auth_token: 39f74fda1805cc1ea5a92131272e962c
+    to_number: '+919941716217'
+    X-CMC_PRO_API_KEY: '54533a9c-e9d3-4c4d-8704-993ad1a88e8d'
+    url: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
