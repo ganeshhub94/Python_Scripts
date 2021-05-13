@@ -23,27 +23,27 @@ date = str(date)
 
 ## API to get current bitcoin price:
 
-# def get_bitcoin_price():
-#     url = data[0]['Details']['url']
+def get_bitcoin_price():
+    url = data[0]['Details']['url']
 
-#     parameters = {'start':'1',
-#              'limit':'1',
-#              'convert':'INR'
-#              }
+    parameters = {'start':'1',
+             'limit':'1',
+             'convert':'INR'
+             }
 
-#     headers = {'Accepts':'application/json',
-#           'X-CMC_PRO_API_KEY':data[0]['Details']['X-CMC_PRO_API_KEY']}
-#     session = Session()
-#     session.headers.update(headers)
-#     respone = session.get(url,params = parameters)
-#     output = json.loads(respone.text)
-#     price = output['data'][0]['quote']['INR']['price']
-#     return int(price)
+    headers = {'Accepts':'application/json',
+          'X-CMC_PRO_API_KEY':data[0]['Details']['X-CMC_PRO_API_KEY']}
+    session = Session()
+    session.headers.update(headers)
+    respone = session.get(url,params = parameters)
+    output = json.loads(respone.text)
+    price = output['data'][0]['quote']['INR']['price']
+    return int(price)
 
-# print(get_bitcoin_price())
+print(get_bitcoin_price())
 
-# price = get_bitcoin_price()  ## Current price of bit coin using API
-price = 3696899
+price = get_bitcoin_price()  ## Current price of bit coin using API
+# price = 3696899
 
 def twilio_setup(messg_body):               ## Function to send sms using twilio
     account_sid = data[0]['Details']['account_sid']
